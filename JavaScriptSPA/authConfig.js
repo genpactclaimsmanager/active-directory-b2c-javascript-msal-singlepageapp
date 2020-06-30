@@ -8,7 +8,7 @@ const msalConfig = {
   auth: {
     clientId: "e760cab2-b9a1-4c0d-86fb-ff7084abd902",
     authority: b2cPolicies.authorities.signUpSignIn.authority,
-    validateAuthority: false
+    knownAuthorities: ["fabrikamb2c.onmicrosoft.com"],
   },
   cache: {
     cacheLocation: "localStorage", // This configures where your cache will be stored
